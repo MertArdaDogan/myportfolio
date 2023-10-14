@@ -1,0 +1,128 @@
+body{
+    background-color: #100e17;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
+.nav-fixed{
+    position: fixed;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+}
+.logo a{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-item a{
+    padding-left: 1.5rem;
+    color: #fff;
+}
+
+
+
+.home{
+    background-image: url(/img/main.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.home .row{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.body-left h1{
+    font-size: 50px;
+    margin: initial;
+}
+.body-left h3{
+    font-size: 20px;
+    margin-top: initial;
+}
+.information div{
+    padding-bottom: 10px;
+}
+.information div i{
+    padding-right: 15px;
+    font-size: 13px;
+}
+.information div a{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+.socials{
+    margin-top: 30px;
+    display: flex;
+}
+.socials a{
+    color: #fff;
+    font-size: 17px;
+    display: block;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+.socials a:hover{
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+}
