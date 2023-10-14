@@ -69,7 +69,7 @@ a{
 
 
 .home{
-    background-image: url(/img/main.jpg);
+    background-image: url(../img/main.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
