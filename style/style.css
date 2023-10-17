@@ -66,11 +66,6 @@ a{
     justify-content: flex-end;
     font-family: 'Roboto', sans-serif;
 }
-.logo a{
-    font-size: 35px;
-    color: #fff;
-    font-weight: 500;
-}
 .navbar-nav{
     display: flex;
     align-items: center;
@@ -96,7 +91,7 @@ a{
     background-position: center center;
 }
 .overlay{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .home .row{
     height: 100vh;
@@ -106,26 +101,27 @@ a{
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
-.body-left{
+.col-1{
     transition: all .50s ease;
 }
-.body-left h1{
+.col-1 h1{
     font-size: 50px;
     margin: initial;
 }
-.body-left h3{
+.col-1 h3{
     font-size: 20px;
     margin-top: initial;
+    font-weight: 500;
 }
-.information div{
+.info div{
     padding-bottom: 10px;
 }
-.information div i{
+.info div i{
     padding-right: 15px;
     font-size: 13px;
     cursor: pointer;
 }
-.information div a{
+.info div a{
     color: #fff;
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
