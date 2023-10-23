@@ -1,0 +1,40 @@
+@media (min-width: 200px){
+    .container{
+       max-width: 200px;
+    }
+}
+@media (min-width: 400px){
+    .container{
+       max-width: 300px;
+    }
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 512px;
+    }
+}
+@media (max-width: 576px){
+    .nav-item{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 704px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 928px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1136px;
+    }
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+}

@@ -1,5 +1,5 @@
 body{
-    background-color: #100e17;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,56 +7,17 @@ body{
 a{
     text-decoration: none;
 }
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
 .container{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
-}
-@media (min-width: 200px){
-    .container{
-       max-width: 200px;
-    }
-}
-@media (min-width: 400px){
-    .container{
-       max-width: 300px;
-    }
-}
-@media (min-width: 576px){
-    .container{
-        max-width: 512px;
-    }
-}
-@media (max-width: 576px){
-    .nav-item{
-        display: none;
-    }
-}
-@media (min-width: 768px){
-    .container{
-        max-width: 704px;
-    }
-}
-@media (min-width: 992px){
-    .container{
-        max-width: 928px;
-    }
-}
-@media (min-width: 1200px){
-    .container{
-        max-width: 1136px;
-    }
-}
-@media (min-width: 1400px){
-    .container{
-        max-width: 1320px;
-    }
-}
-.nav-fixed{
-    position: fixed;
-    width: 100%;
 }
 .navbar{
     display: flex;
@@ -81,11 +42,12 @@ a{
     border-bottom: 2px solid white;
 }
 
-
-
+#home{
+    animation: fadeIn 0.5s ease;
+}
 .home{
     background-image: url(../img/main.jpg);
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -93,9 +55,9 @@ a{
 .overlay{
     background-color: rgba(0, 0, 0, 0.5);
 }
-.home .row{
-    height: 100vh;
+.row{
     display: flex;
+    height: 100vh;
     justify-content: space-between;
     align-items: center;
     color: #fff;
@@ -150,3 +112,38 @@ a{
   transform: translateY(-4px);
   box-shadow: 0 0 30px #fff;
 }
+
+#about {
+    animation: fadeInDown 1s ease;
+}
+.about .row{
+    height: initial;
+    padding-top: 5rem;
+    position: relative;
+}
+#about #btn{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    cursor: pointer;
+}
+.about .col-1{
+    flex: 1;
+}
+.about .col-1 img{
+    width: 100%;
+    border: 1px solid red;
+}
+.about .col-2{
+    flex: 1;
+}
+.about-text{
+    padding-left: 4rem;
+}
+.about-text h3{
+    margin: initial;
+}
+.about-text p{
+    font-size: 14px;
+}
+
