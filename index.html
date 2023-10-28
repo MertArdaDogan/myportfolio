@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genar</title>
+    <title>Mert</title>
     <link rel="stylesheet" href="./style/main.css">
         <link rel="stylesheet" href="./style/media.css">
     <link rel="stylesheet" href="./style/animation.css">
@@ -16,8 +16,8 @@
     <header id="header">
         <div class="container">
             <nav class="navbar">
-                <ul id="navbarnav" class="navbar-nav">
-                    <li class="nav-item"> <a onclick="openAbout(),closeHome(),closeNavbar()" href="#">Hakkımda</a></li>
+                <ul id="navbarnav" class="navbar-nav"">
+                    <li id="toggleButton" class="nav-item"><a href="#">Hakkımda</a></li>
                     <li class="nav-item"><a onclick="openProjects()" href="#">Projeler</a></li>
                     <li class="nav-item"><a onclick="openContact()" href="#">İletişim</a></li>
                 </ul>
@@ -29,26 +29,20 @@
             <div class="overlay">
                 <div class="container">
                     <div class="row">
-                        <i id="btn" class="fa-solid fa-angle-down"></i>
+                        <i id="resetButton" class="fa-solid fa-angle-down btn"></i>
                         <div class="col-1">
                             <img src="./img/heros.png" alt=""">
                         </div>
                         <div class="col-2">
                             <div class="about-text">
                                 <h1>Hakkımda</h1>
-                                <h3>Ben Kimim?</h3>
+                                    <h3>Ben Kimim?</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium blanditiis, maxime nihil quibusdam debitis ipsa! Saepe alias dolorem exercitationem?</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="projects" style="display: none;">
-            <div style="color: white;">FSALOSFALFSAL</div>
-        </section>
-        <section id="contact" style="display: none;">
-            <div style="color: white;">FSALOSFALFSAL</div>
         </section>
         <section id="home" class="home" style="display: block;">
             <div class="overlay">
@@ -77,6 +71,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="projects" style="display: none;">
+            <div style="color: white;">FSALOSFALFSAL</div>
+        </section>
+        <section id="contact" style="display: none;">
+            <div style="color: white;">FSALOSFALFSAL</div>
         </section>
     </main>
     <footer></footer>

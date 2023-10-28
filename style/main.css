@@ -27,6 +27,9 @@ header{
     justify-content: flex-end;
     font-family: 'Roboto', sans-serif;
 }
+#navbarnav{
+    animation: fadeIn 5s ease;
+}
 .navbar-nav{
     display: flex;
     align-items: center;
@@ -43,7 +46,8 @@ header{
 }
 
 #home{
-    animation: fadeIn 0.5s ease;
+    
+
 }
 .home{
     background-image: url(../img/main.jpg);
@@ -113,15 +117,13 @@ header{
   box-shadow: 0 0 30px #fff;
 }
 
-#about {
-    animation: fadeInDown 1s ease;
-}
+
 .about .row{
     height: initial;
     padding-top: 5rem;
     position: relative;
 }
-#about #btn{
+#about .btn{
     position: absolute;
     right: 0;
     top: 50px;
@@ -146,4 +148,3 @@ header{
 .about-text p{
     font-size: 14px;
 }
-
