@@ -7,6 +7,9 @@ body{
 a{
     text-decoration: none;
 }
+.text-center{
+    text-align: center;
+}
 header{
     position: absolute;
     width: 100%;
@@ -45,10 +48,6 @@ header{
     border-bottom: 2px solid white;
 }
 
-#home{
-    
-
-}
 .home{
     background-image: url(../img/main.jpg);
     height: 100%;
@@ -70,14 +69,15 @@ header{
 .col-1{
     transition: all .50s ease;
 }
-.col-1 h1{
+.col-1 .home-header{
     font-size: 50px;
     margin: initial;
+    font-weight: 300;    
 }
 .col-1 h3{
     font-size: 20px;
     margin-top: initial;
-    font-weight: 500;
+    font-weight: 200;
 }
 .info div{
     padding-bottom: 10px;
@@ -91,7 +91,7 @@ header{
     color: #fff;
     font-size: 13px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     transition: all 1s ease;
 }
 .socials{
@@ -147,4 +147,13 @@ header{
 }
 .about-text p{
     font-size: 14px;
+}
+.col{
+    flex: 1;
+}
+.col h1, .col-2 h1{
+    font-size: 30px;
+}
+#about .row .about-text p{
+
 }

@@ -19,7 +19,7 @@ const resetButton   = document.querySelector("#resetButton");
         { opacity: '0' },
       ],
       {
-        duration: 1000, 
+        duration: 500, 
         fill: 'forwards'
       },
     ).onfinish = function() {
@@ -36,7 +36,7 @@ const resetButton   = document.querySelector("#resetButton");
         { opacity: '1' },
       ],
       {
-        duration: 2000, 
+        duration: 1500, 
         fill: 'forwards'
       });
       toggleButton.style.display = "none";
@@ -53,7 +53,7 @@ const resetButton   = document.querySelector("#resetButton");
         { opacity: '0' },
       ],
       {
-        duration: 2500,
+        duration: 2000,
         fill: 'forwards',
         easing: 'ease-in-out',
       }
@@ -66,7 +66,7 @@ const resetButton   = document.querySelector("#resetButton");
           { opacity: '1' },
       ], 
       {
-        duration: 2000, 
+        duration: 500, 
         fill: 'forwards'
       });
       navbarnav.style.display ="flex";
