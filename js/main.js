@@ -69,7 +69,7 @@ const resetButton   = document.querySelector("#resetButton");
         duration: 500, 
         fill: 'forwards'
       });
-      navbarnav.style.display ="flex";
+      navbarnav.style.display ="block";
     };
     toggleButton.style.display = "block";
   });

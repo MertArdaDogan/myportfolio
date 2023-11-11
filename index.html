@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mert</title>
     <link rel="stylesheet" href="./style/main.css">
-        <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/media.css">
     <link rel="stylesheet" href="./style/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,46 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body> 
-    <header id="header">
-        <div class="container">
-            <nav class="navbar">
-                <ul id="navbarnav" class="navbar-nav"">
-                    <li id="toggleButton" class="nav-item"><a href="#">Hakkımda</a></li>
-                    <li class="nav-item"><a onclick="openProjects()" href="#">Projeler</a></li>
-                    <li class="nav-item"><a onclick="openContact()" href="#">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>  
     <main>
-        <section id="about" class="about" style="display: none;">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <i id="resetButton" class="fa-solid fa-angle-down btn"></i>
-                        <div class="col-1">
-                            <img src="./img/heros.png" alt=""">
-                        </div>
-                        <div class="col-2">
-                            <div class="about-text">
-                                <h1>Hakkımda</h1>
-                                    <h3>Ben Kimim?</h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad sapiente labore commodi quaerat maiores at nulla reprehenderit tenetur incidunt eum ducimus magni aliquam tempore a autem eaque, qui dignissimos in ab quibusdam vel quia quis maxime suscipit? Molestiae saepe ad ipsum corrupti dolorum optio ducimus fugiat voluptate impedit pariatur nesciunt, explicabo, aliquam ut perspiciatis, similique quidem ab! Aspernatur, assumenda eligendi. Corporis placeat sit delectus perferendis cum earum soluta inventore quae minus porro, aliquam facilis expedita mollitia sed dolor vitae. Odio, quas tempora praesentium voluptatibus amet debitis! Repellendus, quas voluptatum aut, quam expedita eligendi officiis nulla nostrum fuga ducimus debitis ipsum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="education text-center">
-                                <h1>Eğitim</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section id="home" class="home" style="display: block;">
             <div class="overlay">
+                <nav id="navbarnav" class="navbar-nav">
+                    <div id="toggleButton" class="nav-item"><a href="#">Hakkımda</a></div>
+                    <div id="toogleButton" class="nav-item"><a href="#">Projeler</a></div>
+                    <div class="nav-item"><a onclick="openContact()" href="#">İletişim</a></div>
+                </nav>
                 <div class="container">
                     <div class="row">
                         <div class="col-1">
@@ -74,6 +42,32 @@
                         </div>
                         <div class="col-2">
                             <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about" style="display: none;">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <i id="resetButton" class="fa-solid fa-angle-down btn"></i>
+                        <div class="col-1">
+                            <img src="./img/heros.png" alt=""">
+                        </div>
+                        <div class="col-2">
+                            <div class="about-text">
+                                <h1>Hakkımda</h1>
+                                    <h3>Ben Kimim?</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad sapiente labore commodi quaerat maiores at nulla reprehenderit tenetur incidunt eum ducimus magni aliquam tempore a autem eaque, qui dignissimos in ab quibusdam vel quia quis maxime suscipit? Molestiae saepe ad ipsum corrupti dolorum optio ducimus fugiat voluptate impedit pariatur nesciunt, explicabo, aliquam ut perspiciatis, similique quidem ab! Aspernatur, assumenda eligendi. Corporis placeat sit delectus perferendis cum earum soluta inventore quae minus porro, aliquam facilis expedita mollitia sed dolor vitae. Odio, quas tempora praesentium voluptatibus amet debitis! Repellendus, quas voluptatum aut, quam expedita eligendi officiis nulla nostrum fuga ducimus debitis ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="education text-center">
+                                <h1>Eğitim</h1>
+                            </div>
                         </div>
                     </div>
                 </div>

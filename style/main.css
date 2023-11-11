@@ -11,7 +11,7 @@ a{
     text-align: center;
 }
 header{
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 2;
 }
@@ -22,35 +22,42 @@ header{
     padding-left: 2rem;
     padding-right: 2rem;
 }
-.navbar{
-    display: flex;
-    align-items: center;
-    padding-top: 1.5rem;
-    padding-right: 1.5rem;
-    justify-content: flex-end;
-    font-family: 'Roboto', sans-serif;
-}
-#navbarnav{
-    animation: fadeIn 5s ease;
-}
-.navbar-nav{
-    display: flex;
-    align-items: center;
-    list-style: none;
+.nav-item{
+    position: absolute;
 }
 .nav-item a{
+    font-size: 20px;
     color: #fff;
-    margin-left: 1.5rem;
     border-bottom: 2px solid transparent;
     transition: all .70s ease;
+    list-style: none;
+    padding-top: initial;
+    padding-bottom: 0.2rem;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-item a:hover{
     border-bottom: 2px solid white;
 }
-
+.nav-item:nth-child(1){
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-item:nth-child(2){
+    top: 46%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+    transform: rotateZ(90deg);
+}
+.nav-item:nth-child(3){
+    top: 46%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    transform: rotateZ(270deg);
+}
 .home{
+    height: 100vh;
     background-image: url(../img/main.jpg);
-    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -59,8 +66,8 @@ header{
     background-color: rgba(0, 0, 0, 0.5);
 }
 .row{
-    display: flex;
     height: 100vh;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
@@ -144,15 +151,18 @@ header{
 }
 .about-text h3{
     margin: initial;
+    font-size: 17.5px;
 }
 .about-text p{
     font-size: 14px;
+    margin-top: 13px;
 }
 .col{
     flex: 1;
 }
 .col h1, .col-2 h1{
     font-size: 30px;
+    margin-bottom: 2px;
 }
 #about .row .about-text p{
 
